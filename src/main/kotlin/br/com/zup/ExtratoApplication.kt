@@ -1,4 +1,4 @@
-package br.com.zup.extrato
+package br.com.zup
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication

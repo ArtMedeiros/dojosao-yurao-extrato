@@ -26,7 +26,7 @@ services:
       KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: "1"
       KAFKA_AUTO_CREATE_TOPICS_ENABLE: "true"
 
-  postgres_proposta:
+  postgres_extrato:
     image: 'postgres:9.6-alpine'
     volumes:
       - aplicacao-volume:/var/lib/postgresql/data
@@ -42,3 +42,4 @@ services:
 
 volumes:
   aplicacao-volume:
+  postgres_extrato:
