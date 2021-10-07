@@ -1,8 +1,5 @@
 version: '3'
 
-networks:
-  production-network:
-
 services:
 
   zookeeper:
@@ -37,8 +34,6 @@ services:
       POSTGRES_PASSWORD: dojao
       POSTGRES_DB: dojao
       POSTGRES_HOST: dojao
-    networks:
-      - production-network
 
 volumes:
   aplicacao-volume:
