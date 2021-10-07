@@ -8,8 +8,8 @@ RUN mvn -f /usr/src/app/pom.xml clean package -Dmaven.test.skip=true
 
 ## Runner Image
 ## With correto jdk version
-## FROM amazoncorretto:11.0.12
-FROM openjdk:11-alphine
+## FROM amazoncorretto:11.0.12-alpine
+FROM openjdk:11-alpine
 COPY --from=builder /usr/src/app/target/*.jar /usr/app/app.jar
 EXPOSE 8080
 ENTRYPOINT ["java","-jar","/usr/app/app.jar"]
