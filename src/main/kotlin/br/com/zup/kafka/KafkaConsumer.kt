@@ -24,7 +24,7 @@ class KafkaConsumer(
             ack.acknowledge()
             log.info("Transação de ${message.operacao} salva com sucesso")
         } catch (e: Exception) {
-            log.error("Erro inesperado ${e.message}")
+            log.error("Não foi possível processar a mensage: $message\nErro inesperado ${e.message}")
         }
     }
 }
